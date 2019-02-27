@@ -18,3 +18,6 @@ There are 5 methods implemented in this api:
 3. Read driver method is called via sending a get request to the url "https://localhost:1058/driver_operations/:driverId".
 4. Update driver method is called via sending a put request to the url "https://localhost:1058/driver_operations/:driverId".
 5. Delete driver method is called via sending a delete request to the url "https://localhost:1058/driver_operations/:driverId".
+
+To start the server first run mongod server then 
+```npm run start```
