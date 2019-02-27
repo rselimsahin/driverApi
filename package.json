@@ -4,7 +4,12 @@
   "description": "driverApi with RESTful service",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rselimsahin/driverApi.git"
   },
   "keywords": [
     "RESTful"
@@ -13,5 +18,10 @@
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.16",
+    "mongose": "0.0.2-security"
   }
 }
