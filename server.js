@@ -6,7 +6,7 @@ var express=require('express'),
     parser=require('body-parser');
 
 db.Promise=global.Promise;
-db.connect('mongodb://localhost/driver_db')
+db.connect('mongodb://localhost/driver_db',{ useNewUrlParser: true })
 
 app.use(parser.urlencoded({extended: true}));
 app.use(parser.json());

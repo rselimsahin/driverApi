@@ -4,10 +4,12 @@ var Schema=db.Schema;
 
 var DriverSchema=new Schema({
     name:{
-        type:String
+        type:String,
+        required:true
     },
     email:{
-        type:String
+        type:String,
+        required:true
     },
     score:{
         type:Number,

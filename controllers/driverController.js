@@ -24,6 +24,8 @@ exports.read_driver=function(req, res){
     Driver.findById(req.params.driverId,function(err, driver){
         if(err)
             res.send(err);
+        if(!driver)
+            return res.status(404).send("Driver not found!");
         res.json(driver);
     });
 };
@@ -37,7 +39,7 @@ exports.update_driver=function(req, res){
 };
 
 exports.delete_driver=function(req, res){
-    Driver.remove({_id: req.params.driverId}, function(err, driver){
+    Driver.deleteOne({_id: req.params.driverId}, function(err, driver){
         if(err)
             res.send(err);
         res.json({message: 'Delete operation successful.'});
