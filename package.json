@@ -1,0 +1,17 @@
+{
+  "name": "driverapi",
+  "version": "1.0.0",
+  "description": "driverApi with RESTful service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RESTful"
+  ],
+  "author": "R Selim Sahin",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
